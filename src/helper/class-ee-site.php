@@ -1896,11 +1896,11 @@ abstract class EE_Site_Command {
 	protected function check_site_count() {
 		$sites = Site::all();
 
-		if ( 27 > count( $sites ) ) {
+		if ( 100 > count( $sites ) ) {
 			return;
 		}
 
-		\EE::error( 'You can not create more than 27 sites' );
+		\EE::error( 'You can not create more than 100 sites' );
 	}
 
 	/**
